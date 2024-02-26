@@ -1,5 +1,7 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 
+// eslint-disable-next-line react/prop-types
 export default function MenuItem({ data }) {
   const [showNested, setShowNested] = useState({});
 
