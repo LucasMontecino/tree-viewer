@@ -1,10 +1,14 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/jsx-key */
+/* eslint-disable react/prop-types */
 import MenuItem from "./menu-item";
 
-// eslint-disable-next-line react/prop-types
-export default function MenuList({ data }) {
+export default function MenuList({ list = [] }) {
   return (
     <ul className="list-container">
-      <MenuItem data={data} />
+      {list && list.length
+        ? list.map((item) => <MenuItem item={item} />)
+        : null}
     </ul>
   );
 }
