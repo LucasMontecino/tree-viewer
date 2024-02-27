@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tree-viewer-container {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 300px;
+    background-color: #3498DB;
+    padding-top: 20px;
+}
+
+.list-container {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.list-item {
+    padding: 10px 0;
+    cursor: pointer;
+}

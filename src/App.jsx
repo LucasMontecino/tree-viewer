@@ -1,10 +1,11 @@
-import TreeViewer from "./components/tree-viewer";
-import data from "./components/tree-viewer/data";
+import TreeViewer from "./components/Treeviewer";
+import data from "./components/Treeviewer/data";
 
 function App() {
+  console.log(data);
   return (
     <>
-      <TreeViewer data={data} />
+      <TreeViewer menu={data} />
     </>
   );
 }
