@@ -5,7 +5,7 @@ function App() {
   console.log(data);
   return (
     <>
-      <TreeViewer menu={data} />
+      <TreeViewer data={data} />
     </>
   );
 }

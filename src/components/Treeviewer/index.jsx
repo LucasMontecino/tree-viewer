@@ -1,10 +1,12 @@
-import MenuList from "./menu-list";
+import MenuList from "./MenuList";
 import "./styles.css";
 
-export default function TreeViewer({ menu = [] }) {
+export default function TreeViewer({ data }) {
   return (
-    <div className="tree-viewer-container">
-      <MenuList menus={menu} />
+    <div className="main-container">
+      <div className="list-container">
+        <MenuList list={data} />
+      </div>
     </div>
   );
 }
